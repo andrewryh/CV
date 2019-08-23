@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+% It was modified by Katy Huff
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+\usepackage{graphicx}
+%\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+% Margins
+\usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+%\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+\usepackage{eso-pic,graphicx}
+
+
+%--------------------------------------------------------------------------------------
+%--------INPUT DATA
+%--------------------------------------------------------------------------------------
+\usepackage{xspace}
+\newcommand{\StudentFirstName}{Andrei\xspace}
+\newcommand{\StudentLastName}{Rykhlevskii\xspace}
+\newcommand{\RecipientName}{Recruiting Manager\xspace}
+\newcommand{\RecipientAddress}{Argonne National Laboratory}
+%\newcommand{\<++>}{<++>\xspace}
+
+\begin{document}
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{background.pdf}}
+
+
+%----------------------------------------------------------------------------------------
+%    ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{\RecipientName\\
+        \RecipientAddress\xspace}
+
+%-------------------------------------------------------------------------------
+%    YOUR NAME & ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\address{Andrei Rykhlevskii\\
+andreir2@illinois.edu\\
+226 Talbot Laboratory\\
+104 Wright Street\\
+MC-234\\
+Urbana, IL 61801}
+
+%-------------------------------------------------------------------------------
+%    LETTER CONTENT SECTION
+%-------------------------------------------------------------------------------
+
+\opening{To \RecipientName,}
+
+I am responding to the job posting #406930 at www.anl.gov for a Postdoctoral 
+Appointee position in the Nuclear Science and Engineering Division at Argonne 
+National Laboratory. I am a Nuclear Engineering Ph.D Candidate in the Nuclear, 
+Plasma, \& Radiological Engineering Department at the University of Illinois 
+at Urbana-Champaign. My current research and dissertation focuses on 
+developing computational tools for modeling of neutronics and coupled 
+multiphysics in molten salt nuclear reactors. I received my M.Sc. in Nuclear 
+Engineering from the UIUC in May of 2018 and expect to complete my Ph.D. in 
+Summer of 2020.
+
+I earned a bachelor’s degree in 2010 from Bauman Moscow State Technical 
+University, concentrating on reactor physics and nuclear fuel cycles. After 
+graduation I worked as a nuclear reactor analyst in ROSATOM for a total of 3 
+years. My research have primarily been in neutron transport, mesh generation, 
+thermal-hydraulics/CFD and safety analysis. 
+
+
+
+\closing{Sincere regards,\\
+{Andrei Rykhlevskii\\
+Ph.D. Candidate\\
+Nuclear, Plasma, \& Radiological Eng.\\
+U. Illinois at Urbana-Champaign}
+}
+
+%-------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
+
+
+
