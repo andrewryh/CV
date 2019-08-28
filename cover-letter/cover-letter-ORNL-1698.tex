@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+% It was modified by Katy Huff
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+\usepackage{graphicx}
+%\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+% Margins
+\usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+%\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+\usepackage{eso-pic,graphicx}
+
+
+%--------------------------------------------------------------------------------------
+%--------INPUT DATA
+%--------------------------------------------------------------------------------------
+\usepackage{xspace}
+\newcommand{\StudentFirstName}{Andrei\xspace}
+\newcommand{\StudentLastName}{Rykhlevskii\xspace}
+%\newcommand{\RecipientName}{Dr. Germina Ilas\xspace}
+\newcommand{\RecipientName}{Recruiting Manager\xspace}
+\newcommand{\RecipientAddress}{Reactor Physics Group\\ Reactor and Nuclear Systems Division\\ Nuclear Science and Engineering Directorate \\ Oak Ridge National Laboratory}
+%\newcommand{\<++>}{<++>\xspace}
+
+\begin{document}
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{background.pdf}}
+
+
+%----------------------------------------------------------------------------------------
+%    ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{\RecipientName\\
+        \RecipientAddress\xspace}
+
+%-------------------------------------------------------------------------------
+%    YOUR NAME & ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\address{Andrei Rykhlevskii\\
+andreir2@illinois.edu\\
+226 Talbot Laboratory\\
+104 Wright Street\\
+Urbana, IL 61801}
+
+%-------------------------------------------------------------------------------
+%    LETTER CONTENT SECTION
+%-------------------------------------------------------------------------------
+
+\opening{To \RecipientName,}
+
+I am responding to the announcement at www.jobs.ornl.gov for an R\&D Staff Member -- Nuclear Reactors Analyst (1698) position in the Reactor Physics Group within the Reactor and Nuclear Systems Division. I am a Ph.D. Candidate in the Nuclear, Plasma, \& Radiological Engineering Department at the University of Illinois at Urbana-Champaign. My current research and dissertation focus is on 
+developing computational tools for neutronics and fuel cycle modeling of molten salt nuclear reactors.  I received my M.Sc. in Nuclear Engineering with a focus on Reactor Physics from the UIUC in May of 2018 and expect to complete my Ph.D. in Nuclear Engineering with Computational Science and Engineering (CSE) Concentration in Summer of 2020.
+
+I earned a bachelor’s degree in 2010 from Bauman Moscow State Technical 
+University, with a focus on reactor physics and nuclear fuel cycle. After 
+graduation, I worked as a nuclear reactor analyst in ROSATOM for a total of 3 
+years. My research has primarily been in neutron transport, mesh generation, 
+and safety analysis for light-water reactors (VVER).
+
+At ROSATOM, I worked on the verification, validation, and application of KATRIN (part of CNCSN 2009),  parallel $S_N$ transport code for fluence calculations. KATRIN’s geometry is combinatorial, and the partly-structured mesh is manually generated to fit it. I developed several scripts and codes for the generation of such meshes; this required me to gain intuition about local mesh refinement, as well as  made me better at parametrizing complex shapes. My Senior Project was on the topic of a full-VVER vessel solution of Bateman equations, using KATRIN and WIMS.
+
+Besides generating the meshes for fluence analysis, my work also involved computing the particle sources. I had a particular impact in this area: while the plants had access to the rod-wise source data, until my work, only homogenized (by fuel assembly) sources were used in the analysis. Primarily due to this simplification, KATRIN’s calculations typically overestimated the maximum fluence concentration by up to 15\% compared to experiments. I implemented a set of rod-wise source generation procedures, which lowered the over-estimates to 8-10\%. Lastly, besides experimental data, part of my job was also running code-to-code comparison studies between KATRIN and other, more accurate and slower transport codes. To support this, I developed a suite of scripts that automatically generated the input decks for the same problems, which significantly simplified code comparisons. 
+
+My strong publication record in computational nuclear systems analysis and reactor modeling, as well as 3 years of experience in ROSATOM, have helped me gain a skill set that will readily align with the goals of the Reactor Physics Group. Additionally, my experience in confirmatory analysis assessments for 
+Russian Federal Service for Environmental, Technological, and Nuclear Supervision, as well as expertise in using SCALE, MCNP, and Serpent, promise confidence and ability that will be necessary to support the Reactor Physics Group mission. I also have experience of using CYCLUS, which was developed by my Ph.D. advisor, Kathryn D. Huff, and our research group continuously developing and improving this Fuel Cycle Simulator.
+
+Over Summer 2018, I had the privilege to be an intern in Reactor Physics group. I had developed full-core and simplified unit cell models of four perspective Fast Molten Salt Reactors under Dr. Benjamin Betzler supervision. Those models have been used for lifetime-long depletion simulation with realistic continuous online reprocessing. Based on these simulations, Fuel Cycle Evaluation Metrics have been calculated and compared with competitive fuel cycle technologies. Potentially, this data may be used to discuss U.S. future transition scenarios from decommissioned LWRs to Generation IV MSRs. This short-term internship inspired me to seek an opportunity for long-term employment at ORNL.
+
+Irrespective of the status of my application, I would be happy to share my most recent research results and learn more about the Reactor Physics Group at ORNL. Thank you for your consideration.
+
+\closing{Sincere regards,\\
+{Andrei Rykhlevskii\\
+Ph.D. Candidate\\
+Nuclear, Plasma, \& Radiological Eng.\\
+U. Illinois at Urbana-Champaign}
+}
+
+%-------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
+
+
+

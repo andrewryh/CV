@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+% It was modified by Katy Huff
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+\usepackage{graphicx}
+%\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+% Margins
+\usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+%\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+\usepackage{eso-pic,graphicx}
+
+
+%--------------------------------------------------------------------------------------
+%--------INPUT DATA
+%--------------------------------------------------------------------------------------
+\usepackage{xspace}
+\newcommand{\StudentFirstName}{Andrei\xspace}
+\newcommand{\StudentLastName}{Rykhlevskii\xspace}
+%\newcommand{\RecipientName}{Dr. Germina Ilas\xspace}
+\newcommand{\RecipientName}{Recruiting Manager\xspace}
+\newcommand{\RecipientAddress}{Reactor Physics Group\\ Reactor and Nuclear Systems Division\\ Oak Ridge National Laboratory}
+%\newcommand{\<++>}{<++>\xspace}
+
+\begin{document}
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{background.pdf}}
+
+
+%----------------------------------------------------------------------------------------
+%    ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{\RecipientName\\
+        \RecipientAddress\xspace}
+
+%-------------------------------------------------------------------------------
+%    YOUR NAME & ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\address{Andrei Rykhlevskii\\
+andreir2@illinois.edu\\
+226 Talbot Laboratory\\
+104 Wright Street\\
+Urbana, IL 61801}
+
+%-------------------------------------------------------------------------------
+%    LETTER CONTENT SECTION
+%-------------------------------------------------------------------------------
+
+\opening{To \RecipientName,}
+
+I am responding to the announcement at www.jobs.ornl.gov for an Assistant R\&D Staff Member -- Advanced Nuclear Reactors Analyst (1794) position in the Reactor Physics Group within the Reactor and Nuclear Systems Division. I am a Ph.D. Candidate in the Nuclear, 
+Plasma, \& Radiological Engineering Department at the University of Illinois 
+at Urbana-Champaign. My current research and dissertation focus is on 
+developing computational tools for neutronics and fuel cycle modeling of molten salt nuclear reactors.  I received my M.Sc. in Nuclear Engineering with a focus on Reactor Physics from the UIUC in May of 2018 and expect to complete my Ph.D. in Nuclear Engineering with Computational Science and Engineering (CSE) Concentration in Summer of 2020.
+
+I earned a bachelor’s degree in 2010 from Bauman Moscow State Technical 
+University, concentrating on reactor physics and nuclear fuel cycle. After 
+graduation, I worked as a nuclear reactor analyst in ROSATOM for a total of 3 
+years. My research has primarily been in neutron transport, mesh generation, 
+and safety analysis for light-water reactors (VVER). I also was involved in 
+Validation and Verification effort for $S_N$ transport software KATRIN (part of CNCSN 2009).
+
+My strong publication record in computational nuclear systems analysis and reactor modeling, as well as 3 years of experience in ROSATOM, have helped me gain a skill set that will readily align with the goals of the Reactor Physics Group. Additionally, my experience in confirmatory analysis assessments for 
+Russian Federal Service for Environmental, Technological, and Nuclear Supervision, as well as expertise in using SCALE, MCNP, and Serpent, promise confidence and ability that will be necessary to support the Reactor Physics Group mission. I am especially interested in the possibility of creating a detailed models of the ORNL transformational challenge reactor (TCR) design using advanced neutronics software. I am also genuinely excited to learn new neutronics packages such as VERA.
+
+Irrespective of the status of my application, I would be happy to share my most recent research results and learn more about the Reactor Physics Group at ORNL. Thank you for your consideration.
+
+\closing{Sincere regards,\\
+{Andrei Rykhlevskii\\
+Ph.D. Candidate\\
+Nuclear, Plasma, \& Radiological Eng.\\
+U. Illinois at Urbana-Champaign}
+}
+
+%-------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
+
+
+
