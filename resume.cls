@@ -814,9 +814,9 @@
 \textwidth=154mm
 \itemsep=0cm
 \parsep=0cm
-\topmargin -12mm
-\textheight 250mm
-%\textheight 275mm
+\topmargin -18mm
+%\textheight 250mm
+\textheight 280mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
